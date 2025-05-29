@@ -12,17 +12,17 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 # Player ratings
 player_points = {
-    "gk1": 85, "gk2": 90, "gk3": 70, "gk4": 88,
-    "lb1": 77, "lb2": 80, "lb3": 82, "lb4": 78,
-    "lcb1": 75, "lcb2": 85, "lcb3": 87, "lcb4": 80,
-    "rcb1": 88, "rcb2": 82, "rcb3": 79, "rcb4": 81,
-    "rb1": 76, "rb2": 85, "rb3": 80, "rb4": 78,
-    "cmf1": 82, "cmf2": 89, "cmf3": 84, "cmf4": 81,
-    "dmf1": 87, "dmf2": 85, "dmf3": 90, "dmf4": 80,
-    "cmf5": 82, "cmf6": 89, "cmf7": 84, "cmf8": 81,
-    "lwf1": 88, "lwf2": 92, "lwf3": 84, "lwf4": 86,
+    "gk1": 78, "gk2": 85, "gk3": 80, "gk4": 90,
+    "lb1": 89, "lb2": 83, "lb3": 78, "lb4": 87,
+    "lcb1": 91, "lcb2": 87, "lcb3": 85, "lcb4": 84,
+    "rcb1": 79, "rcb2": 88, "rcb3": 90, "rcb4": 76,
+    "rb1": 86, "rb2": 84, "rb3": 85, "rb4": 81,
+    "cmf1": 85, "cmf2": 87, "cmf3": 86, "cmf4": 89,
+    "dmf1": 88, "dmf2": 87, "dmf3": 83, "dmf4": 85,
+    "cmf5": 87, "cmf6": 86, "cmf7": 84, "cmf8": 82,
+    "lwf1": 93, "lwf2": 87, "lwf3": 84, "lwf4": 90,
     "cf1": 95, "cf2": 90, "cf3": 88, "cf4": 91,
-    "rwf1": 89, "rwf2": 87, "rwf3": 86, "rwf4": 84
+    "rwf1": 89, "rwf2": 87, "rwf3": 91, "rwf4": 83
 }
 
 # Team positions
@@ -205,16 +205,12 @@ def main():
                 frame[150:270, 100:220] = left_img
                 cv2.putText(frame, f"LEFT: {current_options[0].upper()}", (80, 290), 
                            cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 255), 2)
-                cv2.putText(frame, f"Rating: {player_points[current_options[0]]}", (80, 320), 
-                           cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
                 
                 # Right option
                 right_img = cv2.resize(player_images[current_options[1]], (120, 120))
                 frame[150:270, 400:520] = right_img
                 cv2.putText(frame, f"RIGHT: {current_options[1].upper()}", (380, 290), 
                            cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 255), 2)
-                cv2.putText(frame, f"Rating: {player_points[current_options[1]]}", (380, 320), 
-                           cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
             
             # Detect nose direction and handle hold mechanism
             if results.multi_face_landmarks and current_time - last_action_time > action_cooldown:
