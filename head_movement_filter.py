@@ -19,6 +19,7 @@ player_points = {
     "rb1": 76, "rb2": 85, "rb3": 80, "rb4": 78,
     "cmf1": 82, "cmf2": 89, "cmf3": 84, "cmf4": 81,
     "dmf1": 87, "dmf2": 85, "dmf3": 90, "dmf4": 80,
+    "cmf5": 82, "cmf6": 89, "cmf7": 84, "cmf8": 81,
     "lwf1": 88, "lwf2": 92, "lwf3": 84, "lwf4": 86,
     "cf1": 95, "cf2": 90, "cf3": 88, "cf4": 91,
     "rwf1": 89, "rwf2": 87, "rwf3": 86, "rwf4": 84
@@ -33,6 +34,7 @@ positions = [
     {"name": "RB", "options": ["rb1", "rb2", "rb3", "rb4"]},
     {"name": "CMF", "options": ["cmf1", "cmf2", "cmf3", "cmf4"]},
     {"name": "DMF", "options": ["dmf1", "dmf2", "dmf3", "dmf4"]},
+    {"name": "CMF", "options": ["cmf5", "cmf6", "cmf7", "cmf8"]},
     {"name": "LWF", "options": ["lwf1", "lwf2", "lwf3", "lwf4"]},
     {"name": "CF", "options": ["cf1", "cf2", "cf3", "cf4"]},
     {"name": "RWF", "options": ["rwf1", "rwf2", "rwf3", "rwf4"]}
@@ -285,7 +287,7 @@ def main():
                 break
     
     # Show final result
-    if len(selected_players) >= 10:
+    if len(selected_players) == len(positions):
         result_display = create_result_display(selected_players, player_images)
         cv2.imshow("Your Team Formation", result_display)
         cv2.waitKey(10000)  # Show for 10 seconds
