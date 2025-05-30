@@ -1,78 +1,174 @@
-# finalproject_multimedia
-# Filter Pemilihan Pemain Bola Terbaik Berbasis Facial Tracking
+# 🏆 Filter Dream Team
 
-Proyek ini bertujuan untuk mengembangkan filter interaktif yang memungkinkan pengguna memilih pemain bola terbaik mereka menggunakan facial tracking secara real-time. Dengan memanfaatkan teknologi Python, OpenCV2, dan MediaPipe, filter ini memberikan pengalaman unik dan modern dalam menentukan starting lineup berdasarkan preferensi pengguna.
+Filter ini dirancang untuk membuat filter interaktif yang memungkinkan pengguna memilih pemain sepak bola favorit mereka dengan melacak wajah mereka secara real-time. Dengan mengintegrasikan teknologi Python, OpenCV2, dan MediaPipe, filter ini memberikan pengalaman modern dan menarik dalam menyusun starting lineup sesuai preferensi pengguna.
 
-## Fitur Utama
-1. Facial Tracking Real-Time
-- Filter mengenali wajah pengguna secara langsung melalui kamera.
-- Gerakan kepala digunakan untuk memilih antara dua pemain yang ditampilkan di layar.
-2. Pemilihan Pemain Bola Favorit
-- Pengguna disajikan komparasi visual dua pemain dalam setiap langkah pemilihan.
-- Pemain bola yang dipilih merupakan pemain terbaik disetiap posisinya
-3. Hasil Akhir yang Menarik
-- Setelah seluruh pemilihan selesai, sistem akan menampilkan starting lineup berdasarkan pilihan pengguna.
-- Pengguna juga akan ditampilkan nilai dari starting lineup tersebut
+## ✨ Highlight Fitur
 
-## Teknologi yang Digunakan
-- Python untuk pengembangan logika dan integrasi keseluruhan.
-- OpenCV2 untuk pengolahan video dan deteksi wajah secara real-time.
-- MediaPipe untuk pelacakan gerakan kepala dan analisis gestur.
+### 🎯 **Kontrol Hands-Free dengan Nose Tracking**
+- Sistem kontrol inovatif menggunakan gerakan hidung untuk navigasi
+- Miringkan hidung ke **kiri** atau **kanan** untuk memilih pemain
+- Tahan posisi selama **1 detik** untuk konfirmasi pilihan
+- Interface yang responsif dan mudah digunakan
 
-## Manfaat Proyek
-- Hiburan: Pengguna dapat menciptakan tim impian mereka dengan cara yang interaktif dan menyenangkan.
-- Edukasi: Memberikan wawasan tentang pemain bola dan peran mereka dalam sebuah tim.
-- Inovasi Teknologi: Menggabungkan facial tracking dengan gamifikasi untuk meningkatkan pengalaman pengguna.
-Proyek ini tidak hanya dirancang untuk menghibur, tetapi juga memperkenalkan pengguna pada pengalaman berbasis teknologi modern yang menggabungkan olahraga, data, dan kecerdasan buatan.
-# Anggota Kelompok :
-Abdi Maskur Mutaqin - 121140034 - AbdiMM11
+### ⚽ **Sistem Seleksi Pemain Profesional**
+- Database lengkap dengan **44 pemain** dari berbagai posisi
+- Setiap pemain memiliki **rating individual** berdasarkan performa
+- Formasi taktis **4-3-3** yang populer dalam sepak bola modern
+- Algoritma seleksi yang memastikan variasi pilihan setiap sesi
 
-# Logbook Mingguan
+### 📊 **Analisis Tim Komprehensif**
+- Kalkulasi **total rating tim** secara otomatis
+- Sistem penilaian bertingkat dari **"WEAK TEAM"** hingga **"LEGENDARY TEAM"**
+- Visualisasi formasi profesional layaknya dalam permainan sungguhan
+- Interface yang menarik dengan tata letak pemain yang akurat
 
-### Minggu 1
-- Diskusi mengenai project yang akan dibuat
-- Pembagian tugas tiap anggota kelompok
+## 🛠️ Teknologi Canggih
 
-### Minggu 2
-- Mulai mengerjakan project filter pemain bola
-- Implementasi fitur face tracking dengan python
+| Teknologi | Fungsi |
+|-----------|--------|
+| **Python 3.x** | Engine utama dan logika aplikasi |
+| **OpenCV 4.x** | Computer Vision dan pemrosesan video real-time |
+| **MediaPipe** | AI Framework untuk deteksi landmark wajah |
+| **NumPy** | Komputasi numerik dan manipulasi array |
 
-### Minggu 3
-- Memperbaiki error pada codingan
-- Menambahkan fitur value starting lineup diakhir
+## 👥 Tim Pengembang
 
-### Minggu 4
-- Mengerjakan laporan
-- Mengecek ulang codingan
-- Memasukkan codingan ke github
-- Penyusunan requirements.txt dan README.md.
+| Nama Lengkap | NIM | GitHub Profile |
+|--------------|-----|----------------|
+| **Abdi Maskur Mutaqin** | 121140034 | [@AbdiMM11](https://github.com/AbdiMM11) |
+| **Idza Ramaulkim** | 121140152 | [@Idza-Ramaulkim-121140152](https://github.com/Idza-Ramaulkim-121140152) |
+| **Silvester Adrian Sitanggang** | 121140153 | [@SilvesterASTG](https://github.com/SilvesterASTG) |
 
-# Instruksi instalansi dan penggunaan program
-## Langkah Instalasi
-1. Instal Python
-- Pastikan Python 3.x sudah terinstal di komputer Anda. Jika belum, unduh dari Python Official Website.
+## 📅 Logbook Pengembangan
 
-2. Instal Library yang Dibutuhkan
-- Instal library yang digunakan dalam proyek ini:
-- Copy code pada terminal 
-'''pip install opencv-python opencv-python-headless mediapipe numpy'''
+### 🗓️ **Minggu 1 (Inisiasi Project)**
+- **Brainstorming** konsep aplikasi team selection interaktif
+- **Analisis kebutuhan** teknologi dan library yang diperlukan
+- **Pembagian roles** dan tanggung jawab setiap anggota tim
+- **Setup environment** pengembangan dan repository GitHub
 
-4. Siapkan Gambar Pemain
-- Letakkan file gambar pemain di direktori yang sama dengan file program Python.
-- Pastikan nama file sesuai dengan yang tercantum di kode, seperti:
-  - gk1.jpg
-  - cb1.jpg
-  - cf1.jpg
-  Dan sebagainya.
-  Program akan mencetak pesan kesalahan jika gambar tidak ditemukan.
+### 🗓️ **Minggu 2 (Core Development)**
+- **Implementasi face tracking** menggunakan MediaPipe
+- **Pengembangan sistem kontrol** berbasis gerakan hidung
+- **Integrasi OpenCV** untuk real-time video processing
+- **Testing** algoritma deteksi dan akurasi tracking
 
-5. Jalankan Program
-- Simpan kode dalam file starting_eleven.py, lalu jalankan program dengan perintah:
-Copy code di terminal
-'''python starting_eleven.py'''
+### 🗓️ **Minggu 3 (Feature Enhancement)**
+- **Bug fixing** dan optimasi performa aplikasi
+- **Implementasi sistem scoring** dan penilaian tim
+- **Pengembangan UI/UX** yang lebih intuitif dan menarik
+- **Penambahan feedback visual** untuk user experience
 
-## Penggunaan Program
-1. Pastikan kamera aktif dan dapat digunakan.
-2. Program akan menampilkan dua gambar pemain bola.
-3. Gerakkan kepala ke kiri atau ke kanan untuk memilih salah satu pemain.
-4. Setelah semua posisi terisi, program akan menampilkan formasi tim berdasarkan pilihan Anda dan value dari tim tersebut.
+### 🗓️ **Minggu 4 (Finalisasi & Documentation)**
+- **Code review** menyeluruh dan penambahan dokumentasi
+- **Penyusunan laporan** dan technical documentation
+- **Upload final version** ke GitHub repository
+- **Pembuatan README.md** dan requirements.txt yang komprehensif
+
+## 🚀 Panduan Instalasi
+
+### 📋 **Prasyarat Sistem**
+```bash
+# Pastikan Python 3.7+ terinstal
+python --version
+
+# Pastikan pip package manager tersedia
+pip --version
+```
+
+### 📦 **Instalasi Dependencies**
+```bash
+# Clone repository
+git clone [repository-url]
+cd team-selection-game
+
+# Install required packages
+pip install opencv-python opencv-python-headless mediapipe numpy
+
+# Atau menggunakan requirements.txt
+pip install -r requirements.txt
+```
+
+### 📁 **Struktur Direktori**
+```
+team-selection-game/
+├── main.py                 # File utama aplikasi
+├── asset/                  # Folder gambar pemain
+│   ├── player_gk1.jpg
+│   ├── player_lb1.jpg
+│   └── ... (44 gambar pemain)
+├── requirements.txt        # Dependencies list
+└── README.md              # Dokumentasi ini
+```
+
+### 🖼️ **Setup Asset Gambar**
+- Letakkan **44 gambar pemain** dalam folder `asset/`
+- Format nama file: `player_[kode_pemain].jpg`
+- Contoh: `player_gk1.jpg`, `player_cf1.jpg`, dll.
+- Jika gambar tidak tersedia, sistem akan generate **placeholder otomatis**
+
+## 🎮 Cara Penggunaan
+
+### 🎯 **Langkah-langkah Bermain**
+
+1. **Persiapan**
+   ```bash
+   python main.py
+   ```
+
+2. **Kalibrasi Kamera**
+   - Pastikan **wajah terdeteksi** dengan baik
+   - Posisikan diri dalam **pencahayaan yang cukup**
+   - Hindari **background yang kompleks**
+
+3. **Kontrol Game**
+   - 👈 **Miringkan hidung ke KIRI** → Pilih pemain kiri
+   - 👉 **Miringkan hidung ke KANAN** → Pilih pemain kanan
+   - ⏱️ **Tahan posisi 1 detik** → Konfirmasi pilihan
+   - ❌ **Tekan 'Q'** → Keluar dari aplikasi
+
+4. **Proses Seleksi**
+   - Pilih pemain untuk **11 posisi** (GK, LB, LCB, RCB, RB, CMF, DMF, CMF, LWF, CF, RWF)
+   - Setiap posisi menampilkan **2 opsi pemain random**
+   - **Progress bar** menunjukkan kemajuan hold gesture
+   - **Cooldown 2 detik** antar seleksi untuk stabilitas
+
+5. **Hasil Akhir**
+   - Formasi **4-3-3** dengan pemain terpilih
+   - **Total rating tim** dan kategori performa
+   - Tampilan hasil selama **10 detik**
+
+### 🎛️ **Tips Penggunaan Optimal**
+
+| Aspek | Rekomendasi |
+|-------|-------------|
+| **Pencahayaan** | Cahaya terang, hindari backlight |
+| **Posisi Kamera** | Sejajar dengan wajah, jarak 50-100cm |
+| **Gerakan** | Gerakan hidung yang **jelas** dan **konsisten** |
+| **Stabilitas** | Kepala relatif stabil, hanya hidung yang bergerak |
+
+### 🏆 **Sistem Penilaian Tim**
+
+| Total Rating | Kategori | Deskripsi |
+|--------------|----------|-----------|
+| **900+** | 🏆 LEGENDARY TEAM | Tim dengan pemain bintang di setiap lini |
+| **800-899** | ⭐ EXCELLENT TEAM | Tim yang sangat kompetitif dan seimbang |
+| **700-799** | ✅ GOOD TEAM | Tim solid dengan kualitas di atas rata-rata |
+| **600-699** | 📊 DECENT TEAM | Tim yang cukup baik untuk kompetisi menengah |
+| **<600** | 📉 WEAK TEAM | Tim yang membutuhkan peningkatan signifikan |
+
+## 🔧 Troubleshooting
+
+### ❌ **Masalah Umum dan Solusi**
+
+| Masalah | Penyebab | Solusi |
+|---------|----------|--------|
+| Kamera tidak terdeteksi | Driver atau permission | Restart aplikasi, cek camera permission |
+| Face tracking tidak akurat | Pencahayaan buruk | Perbaiki lighting, hindari shadow |
+| Lag atau freeze | Hardware limitation | Tutup aplikasi lain, restart program |
+| Gambar pemain tidak muncul | File asset tidak lengkap | Cek folder asset/, nama file harus sesuai |
+
+<div align="center">
+
+**🎮 Selamat bermain dan semoga berhasil membangun tim impian Anda! ⚽**
+</div>
