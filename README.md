@@ -2,6 +2,9 @@
 
 Filter ini dirancang untuk membuat filter interaktif yang memungkinkan pengguna memilih pemain sepak bola favorit mereka dengan melacak wajah mereka secara real-time. Dengan mengintegrasikan teknologi Python, OpenCV2, dan MediaPipe, filter ini memberikan pengalaman modern dan menarik dalam menyusun starting lineup sesuai preferensi pengguna.
 
+## Link Video Demo
+https://drive.google.com/file/d/1tHs_tkpxs7dlytXYuJUZSz0jUZf61_Y_/view 
+
 ## ✨ Highlight Fitur
 
 ### 🎯 **Kontrol Hands-Free dengan Nose Tracking**
